@@ -13,6 +13,3 @@ spring:
     url: ${DATABASE_PATH_SHOP_INTEGRATEMODULE_POSTGRES}
     username: ${DATABASE_USER_SHOP_INTEGRATEMODULE_POSTGRES}
     password: ${DATABASE_PASSWORD_SHOP_INTEGRATEMODULE_POSTGRES}
-#    url: jdbc:postgresql://localhost:5432/integrate_online_shop
-#    username: postgres
-#    password: postgres
