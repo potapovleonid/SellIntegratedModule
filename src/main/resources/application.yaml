@@ -1,5 +1,6 @@
 server:
-  port: 8090
+  hostname: localhost
+  port: ${PORT:8090}
 spring:
   jpa:
     hibernate:
@@ -8,6 +9,7 @@ spring:
   flyway:
     baseline-on-migrate: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/integrate_online_shop
-    username: postgres
-    password: postgres
+    driver-class-name: org.postgresql.Driver
+    url: ${DATABASE_PATH_SHOP_INTEGRATEMODULE_POSTGRES}
+    username: ${DATABASE_USER_SHOP_INTEGRATEMODULE_POSTGRES}
+    password: ${DATABASE_PASSWORD_SHOP_INTEGRATEMODULE_POSTGRES}
